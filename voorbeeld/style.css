@@ -1,0 +1,96 @@
+/* NAVIGATION STYLES */
+
+nav {
+    background: #d4d4d4;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    height: 90px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav#mobile-nav {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: #b3b3b3;
+    padding: 20px;
+    right: 0;
+    transition: right .3s ease-in-out;
+}
+
+#hamburger.active {
+    background: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav#mobile-nav {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: block;
+        right: -320px;
+    }
+    #mobile-menu.visible {
+        right: 0px;
+    }
+}
+
+/* HEADER STYLES */
+header {
+    height: 360px;
+    width: 100%;
+    background-color: blue;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* HOMEPAGE CONTENT STYLES */
+#homepage-content {
+    padding: 20px;
+}
+
+#homepage-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
