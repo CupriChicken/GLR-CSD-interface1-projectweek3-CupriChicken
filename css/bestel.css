@@ -1,7 +1,7 @@
 /* NAVIGATION STYLES */
 
 nav {
-    background: #d4d4d4;
+    background: #FF5E5E;
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ nav#mobile-nav {
     position: fixed;
     width: 280px;
     height: 100vh;
-    background: #b3b3b3;
+    background: #9c3030;
     padding: 20px;
     right: 0;
     transition: right .3s ease-in-out;
@@ -61,36 +61,12 @@ nav#mobile-nav {
     }
 }
 
-/* HEADER STYLES */
-header {
-    height: 360px;
-    width: 100%;
-    background-color: blue;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
 }
 
-header h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-/* HOMEPAGE CONTENT STYLES */
-#homepage-content {
-    padding: 20px;
-}
-
-#homepage-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* FOOTER STYLES */
-footer {
-    background-color: #333;
-    color: #FFF;
-    text-align: center;
-    padding: 20px 0;
+a {
+    color: white;
 }

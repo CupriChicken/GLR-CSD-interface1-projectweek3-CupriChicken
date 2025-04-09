@@ -1,0 +1,84 @@
+/* NAVIGATION STYLES */
+
+nav {
+    background: #FF5E5E;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    height: 90px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav#mobile-nav {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: #9c3030;
+    padding: 20px;
+    right: 0;
+    transition: right .3s ease-in-out;
+}
+
+#hamburger.active {
+    background: #ff0000;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav#mobile-nav {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: block;
+        right: -320px;
+    }
+    #mobile-menu.visible {
+        right: 0px;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* IMAGE STYLES */
+.img {
+    max-width: 100%;
+    width: auto;
+}
+
+.description {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+}

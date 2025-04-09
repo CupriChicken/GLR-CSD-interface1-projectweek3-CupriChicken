@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bestel</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/simple-grid.css">
+    <link rel="stylesheet" href="../css/bestel.css">
+    <script defer src="../javascript/hamburger.js"></script>
 </head>
 <body>
+    <nav>
+        <ul class="nav-links">
+            <li class="link"><a href="../html/home.html">Home</a></li>
+            <li class="link"><a href="../html/info.html">Info</a></li>
+            <li class="link"><a href="../html/bestel.html">Bestel</a></li>
+        </ul>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div id="hamburger">HAMBURGER</div>
+    </nav>
+
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/info.html">Info</a></li>
+            <li><a href="../html/bestel.html">Bestel</a></li>
+        </ul>
+    </div>
     
+    <form>
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required>
+        <br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="adres">adres</label>
+        <input type="text" id="adres" name="adres" required>
+        <br>
+        <label for="speelgoed">Welk speelgoed wilt U?</label required>
+        <br>
+        <select id="speelgoed" name="speelgoed">
+          <option value="Plastic egel">Plastic egel</option>
+          <option value="Houten auto set">Houten auto set</option>
+          <option value="Bubbel pop">Bubbel pop</option>
+          <option value="Plastic kasteel">Plastic kasteel</option>
+          <option value="Magneet ster">Magneet ster</option>
+          <option value="Houten auto's">Houten auto's</option>
+          <option value="plastic dieren">plastic dieren</option>
+          <option value="Gele auto">Gele auto</option>
+        </select> <br>
+        <button type="submit">Bestel</button>
+      </form>
 </body>
 </html>
